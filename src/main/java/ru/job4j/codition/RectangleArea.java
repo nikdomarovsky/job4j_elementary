@@ -2,10 +2,7 @@ package ru.job4j.codition;
 
 public class RectangleArea {
     public static double square(double p, double k) {
-        double h = p / (2 * (k + 1));
-        double i = h * k;
-        double s = i * h;
-        double result = s;
+        double result = (p / (2 * (k + 1))) * k * (p / (2 * (k + 1)));
         return result;
     }
 

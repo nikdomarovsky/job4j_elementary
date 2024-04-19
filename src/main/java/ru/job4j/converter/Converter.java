@@ -1,6 +1,6 @@
-package ru.job4j.conventer;
+package ru.job4j.converter;
 
-public class Conventer {
+public class Converter {
     public static float rubleToEuro(float value) {
         float result = value / 70;
         return result;
@@ -12,8 +12,8 @@ public class Conventer {
     }
 
     public static void main(String[] args) {
-        float euro = Conventer.rubleToEuro(140);
-        float dollar = Conventer.rubleToDollar(140);
+        float euro = Converter.rubleToEuro(140);
+        float dollar = Converter.rubleToDollar(140);
         System.out.println("140 rubles are " + euro + " euro.");
         System.out.println("140 rubles are " + dollar + " dollar.");
     }

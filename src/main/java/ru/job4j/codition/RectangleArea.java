@@ -2,8 +2,9 @@ package ru.job4j.codition;
 
 public class RectangleArea {
     public static double square(double p, double k) {
-        double result = (p / (2 * (k + 1))) * k * (p / (2 * (k + 1)));
-        return result;
+        double h = p / (2 * (k + 1));
+        double result = h * k;
+        return result * h;
     }
 
     public static void main(String[] args) {

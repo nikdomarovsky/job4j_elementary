@@ -1,4 +1,4 @@
-package ru.job4j.codition;
+package ru.job4j.condition;
 
 public class TriangArea {
     public static double area(double a, double b, double c) {

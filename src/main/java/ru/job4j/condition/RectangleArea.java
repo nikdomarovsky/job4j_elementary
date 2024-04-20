@@ -1,4 +1,4 @@
-package ru.job4j.codition;
+package ru.job4j.condition;
 
 public class RectangleArea {
     public static double square(double p, double k) {

@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.*;
 class FitTest {
 
     @Test
-    void vwhenMan180Then92() {
+    void whenMan180Then92() {
         short input = 180;
         double expected = 92;
         double output = Fit.manWeight(input);
@@ -22,7 +22,7 @@ class FitTest {
     }
 
     @Test
-    public void test_manWeightWithGivenHeight() {
+    public void manWeightWithGivenHeight() {
         // Arrange
         short height = 180;
         double expected = 92;
@@ -35,7 +35,7 @@ class FitTest {
     }
 
     @Test
-    public void test_womanWeightWithGivenHeight() {
+    public void womanWeightWithGivenHeight() {
         // Arrange
         short height = 170;
         double expected = 69;
@@ -48,7 +48,7 @@ class FitTest {
     }
 
     @Test
-    public void test_manWeightWithNonDivisibleHeight() {
+    public void manWeightWithNonDivisibleHeight() {
         // Arrange
         short height = 185;
         double expected = (height - 100) * 1.15;
@@ -61,7 +61,7 @@ class FitTest {
     }
 
     @Test
-    public void test_manWeightWithMinimumHeight() {
+    public void manWeightWithMinimumHeight() {
         // Arrange
         short height = 0;
         double expected = -100 * 1.15;
@@ -74,7 +74,7 @@ class FitTest {
     }
 
     @Test
-    public void test_womanWeightWithMinimumHeight() {
+    public void womanWeightWithMinimumHeight() {
         // Arrange
         short height = 0;
         double expected = -110 * 1.15;
@@ -87,7 +87,7 @@ class FitTest {
     }
 
     @Test
-    public void test_manWeightWithMaximumHeight() {
+    public void manWeightWithMaximumHeight() {
         // Arrange
         short height = 32767;
         double expected = 32667 * 1.15;
@@ -100,7 +100,7 @@ class FitTest {
     }
 
     @Test
-    public void test_womanWeightWithNonDivisibleHeight() {
+    public void womanWeightWithNonDivisibleHeight() {
         // Arrange
         short height = 175;
         double expected = (height - 110) * 1.15;
@@ -113,7 +113,7 @@ class FitTest {
     }
 
     @Test
-    public void test_manWeightWithHeightLessThan100() {
+    public void manWeightWithHeightLessThan100() {
         // Arrange
         short height = 99;
         double expected = (height - 100) * 1.15;

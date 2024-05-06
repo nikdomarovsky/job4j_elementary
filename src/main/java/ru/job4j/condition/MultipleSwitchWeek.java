@@ -13,4 +13,15 @@ public class MultipleSwitchWeek {
             default -> -1;
         };
     }
+
+    public static void main(String[] args) {
+        System.out.println(numberOfDay("Понедельник"));
+        System.out.println(numberOfDay("Вторник"));
+        System.out.println(numberOfDay("Среда"));
+        System.out.println(numberOfDay("Четверг"));
+        System.out.println(numberOfDay("Пятница"));
+        System.out.println(numberOfDay("Суббота"));
+        System.out.println(numberOfDay("Воскресенье"));
+        System.out.println(numberOfDay("Ошибка"));
+    }
 }

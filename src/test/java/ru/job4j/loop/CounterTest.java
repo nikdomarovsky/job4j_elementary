@@ -13,4 +13,13 @@ class CounterTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void startminus1finish1() {
+        int start = -1;
+        int finish = 1;
+        int result = Counter.sum(start, finish);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
 }

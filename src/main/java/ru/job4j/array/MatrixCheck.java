@@ -58,6 +58,7 @@ public class MatrixCheck {
         if (diagonal1 || diagonal2) {
             result = true;
         }
+
         return result;
     }
 }

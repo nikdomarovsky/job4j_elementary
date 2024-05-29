@@ -34,29 +34,10 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int index = 0; index < board.length; index++) {
-            if (monoHorizontal(board, index) || monoVertical(board, index)) {
+            if (board[index][index] == 'X' && (monoHorizontal(board, index) || monoVertical(board, index))) {
                 result = true;
                 break;
             }
-        }
-        boolean diagonal1 = true;
-        boolean diagonal2 = true;
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][i] != 'X') {
-                diagonal1 = false;
-                break;
-            }
-        }
-
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][board.length - i - 1] != 'X') {
-                diagonal2 = false;
-                break;
-            }
-        }
-
-        if (diagonal1 || diagonal2) {
-            result = true;
         }
 
         return result;
